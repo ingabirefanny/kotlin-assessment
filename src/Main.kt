@@ -3,6 +3,7 @@ fun main(){
     println(average(intArrayOf(20,30,40)))
     println(counting(intArrayOf(20,30,40)))
     println(volumeOfSphere(4.3,3.14,14,))
+    println(isPalindrome("madam, wow, kayak."))
 }
 
 fun numbers(num: IntArray): Int{
@@ -23,8 +24,13 @@ fun counting(digits: IntArray): Int{
 fun volumeOfSphere(v: Double , r: Double,p: Int) : Double{
     var volume= v*p*r
     return volume
-
 }
+
+fun isPalindrome(word: String): Boolean {
+    val word = word.reversed()
+    return word == word
+}
+
 
 
 
